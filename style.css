@@ -1,0 +1,119 @@
+ body {
+     margin: 0;
+     background-color: #323232;
+     font-family: 'Open Sans', sans-serif;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     height: 100vh;
+ }
+
+ h1 {
+     text-align: center;
+     margin-block-end: 30px;
+ }
+
+ .center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .mrg-bottom-10 {
+     margin-bottom: 10px;
+ }
+
+ .winner-message {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.winner-message svg {
+    filter: drop-shadow(1px 1px 3px lightgrey);
+}
+
+ #restart-btn {
+     margin-top: 8px;
+     padding: 12px 24px;
+     font-size: 1.2rem;
+     background-color: #00B0EF;
+     color: white;
+     border: none;
+     border-radius: 12px;
+     cursor: pointer;
+     margin-bottom: 16px;
+ }
+
+ #restart-btn:hover {
+     background-color: #0095c9;
+ }
+
+ #players {
+     display: flex;
+     justify-content: center;
+     gap: 40px;
+     margin: 20px 0;
+ }
+
+ .player {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 2rem;
+     font-weight: bold;
+     color: gray;
+     padding: 10px 20px;
+     border-radius: 12px;
+     background-color: #444;
+     transition: all 0.2s ease;
+ }
+
+ .player.active {
+     color: white;
+     background-color: #437575;
+ }
+
+ #content {
+     flex: 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ table {
+     border-collapse: collapse;
+ }
+
+ td {
+     width: 100px;
+     height: 100px;
+     align-content: center;
+     text-align: center;
+     color: white;
+     border: 0;
+     border-right: 5px solid white;
+     border-bottom: 5px solid white;
+     cursor: pointer;
+ }
+
+ td:hover {
+     background-color: rgba(255, 255, 255, 0.3);
+ }
+
+ tr td:last-child {
+     border-right: none;
+ }
+
+ tr:last-child td {
+     border-bottom: none;
+ }
